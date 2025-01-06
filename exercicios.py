@@ -31,12 +31,17 @@
 # 8. Filtragem de Dados Faltantes
 # Objetivo: Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
 
-usuarios = [
-    {"nome": "Alice", "email": "alice@example.com"},
-    {"nome": "Bob", "email": ""},
-    {"nome": "Carol", "email": "carol@example.com"}
-]
+# usuarios = [
+#     {"nome": "Alice", "email": "alice@example.com"},
+#     {"nome": "Bob", "email": ""},
+#     {"nome": "Carol", "email": "carol@example.com"}
+# ]
+# usuarios_sem_email_valido = [usuario for usuario in usuarios if usuario["email"]=="" or usuario["nome"]==""]
+# print(usuarios_sem_email_valido)
 
-usuarios_sem_email_valido = [usuario for usuario in usuarios if usuario["email"]=="" or usuario["nome"]==""]
+# 9. Extração de Subconjuntos de Dados
+# Objetivo: Dada uma lista de números, extrair apenas aqueles que são pares.
 
-print(usuarios_sem_email_valido)
+numeros = [34, 23, 76, 44, 45, 36, 2]
+somente_pares = [pares for pares in numeros if pares % 2 == 0] 
+print(somente_pares)
