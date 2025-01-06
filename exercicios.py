@@ -42,6 +42,26 @@
 # 9. Extração de Subconjuntos de Dados
 # Objetivo: Dada uma lista de números, extrair apenas aqueles que são pares.
 
-numeros = [34, 23, 76, 44, 45, 36, 2]
-somente_pares = [pares for pares in numeros if pares % 2 == 0] 
-print(somente_pares)
+# numeros = [34, 23, 76, 44, 45, 36, 2]
+# somente_pares = [pares for pares in numeros if pares % 2 == 0] 
+# print(somente_pares)
+
+# 10. Agregação de Dados por Categoria
+# Objetivo: Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+
+vendas = [
+    {"categoria": "eletrônicos", "valor": 1200},
+    {"categoria": "livros", "valor": 200},
+    {"categoria": "eletrônicos", "valor": 800}
+]
+
+total_por_categoria = {}
+for venda in vendas:
+    categoria = venda["categoria"]
+    valor = venda["valor"]
+    if categoria in total_por_categoria:
+        total_por_categoria[categoria] += valor
+    else:
+        total_por_categoria[categoria] = valor
+
+print(total_por_categoria)
