@@ -74,6 +74,6 @@ entrada = ''
 while entrada.lower() != 'sair':
     entrada = input('Digite algum dado (ou sair para fechar a aplicação): ')
     if entrada.lower() != 'sair':
-        dados += entrada
+        dados.append(entrada)
 
 print(dados)
