@@ -69,11 +69,21 @@
 # 11. Leitura de Dados até Flag
 # Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
-dados = []
-entrada = ''
-while entrada.lower() != 'sair':
-    entrada = input('Digite algum dado (ou sair para fechar a aplicação): ')
-    if entrada.lower() != 'sair':
-        dados.append(entrada)
+# dados = []
+# entrada = ''
+# while entrada.lower() != 'sair':
+#     entrada = input('Digite algum dado (ou sair para fechar a aplicação): ')
+#     if entrada.lower() != 'sair':
+#         dados.append(entrada)
 
-print(dados)
+# print(dados)
+
+# 12. Validação de Entrada
+# Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+
+numero = int(input('Digite um número de 1 a 10: '))
+while numero < 1 or numero > 10:
+    print('Número fora do intervalo informado!')
+    numero = int(input('Número inválido, por favor digite um número de 1 a 10: '))
+
+print('Número válido')
