@@ -104,16 +104,28 @@
 # 14. Tentativas de Conexão
 # Objetivo: Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
 
-tentativa_atual = 1
-tentativas_maximas = 3
+# tentativa_atual = 1
+# tentativas_maximas = 3
 
-while tentativa_atual <= tentativas_maximas:
-    print(f'Conectando... tentativa {tentativa_atual} de {tentativas_maximas}.')
-    # Aqui tentaria conectar...
-    # Aqui iria o código para tentar conectar
-    if False: # Suponha que a conexão foi bem-sucedida retorna True, do contrário seria False.
-        print('Conexão bem sucedida.')
-        break
-    tentativa_atual += 1
-else:
-    print('Tentativas de conexão esgotadas.')
+# while tentativa_atual <= tentativas_maximas:
+#     print(f'Conectando... tentativa {tentativa_atual} de {tentativas_maximas}.')
+#     # Aqui tentaria conectar...
+#     # Aqui iria o código para tentar conectar
+#     if False: # Suponha que a conexão foi bem-sucedida retorna True, do contrário seria False.
+#         print('Conexão bem sucedida.')
+#         break
+#     tentativa_atual += 1
+# else:
+#     print('Tentativas de conexão esgotadas.')
+
+# 15. Processamento de Dados com Condição de Parada
+# Objetivo: Processar itens de uma lista até encontrar um valor específico que indica a parada.
+
+lista = ['Danilo', 17, 'stop', 'dahorao', 'sebastian']
+dado_processado = 0
+
+while not 'stop' == lista[dado_processado]:
+    print(f'Dado {lista[dado_processado]} - processado')
+    dado_processado += 1
+
+print('Processamento concluído.')
