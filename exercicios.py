@@ -81,9 +81,22 @@
 # 12. Validação de Entrada
 # Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
 
-numero = int(input('Digite um número de 1 a 10: '))
-while numero < 1 or numero > 10:
-    print('Número fora do intervalo informado!')
-    numero = int(input('Número inválido, por favor digite um número de 1 a 10: '))
+# numero = int(input('Digite um número de 1 a 10: '))
+# while numero < 1 or numero > 10:
+#     print('Número fora do intervalo informado!')
+#     numero = int(input('Número inválido, por favor digite um número de 1 a 10: '))
 
-print('Número válido')
+# print('Número válido')
+
+# 13. Consumo de API Simulado
+# Objetivo: Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+
+pagina_atual = 1
+paginas_totais = 2 # Simulação, na prática, isso viria da API
+
+while pagina_atual <= paginas_totais:
+    print(f'Processando página {pagina_atual} de {paginas_totais}.')
+    # Aqui iria o código para processar os dados da página
+    pagina_atual += 1
+
+print('Processamento concluído')
